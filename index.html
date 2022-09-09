@@ -270,10 +270,23 @@
                     </li>
                 </ul>
             </div>
+            <div>
+                <p class="social-footer">Підпишіться на розсилку</p>
+                <label for="">
+                    <input type="mailto">
+                </label>
+                        <button class="footer-form-sumbit " type="submit">Підписатися
+                            <svg class="position-icon-sent">
+                                <use href="./images/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    
+                
+            </div>
         </div>
         
     </footer>
-    <div class="backdrop " data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg  width="18" height="18">
@@ -285,8 +298,7 @@
                 <label class="modal-form-field">
                     <span class="modal-form-field-desc">Імʼя</span>
                     <span class="modal-form-input-wrapper">
-                        <input type="text" class="modal-form-input" required pattern="[a-zA-Zа-яА-ЯіІїЇ`ʼ]+" name="user_name"
-                            placeholder="" />
+                        <input type="text" class="modal-form-input" required pattern="[a-zA-Zа-яА-ЯіІїЇ`ʼ]+" name="user_name"placeholder="" />
                         <svg class="modal-form-input-icon">
                             <use href="./images/sprite.svg#icon-person"></use>
                         </svg>
@@ -305,7 +317,7 @@
                 <label class="modal-form-field">
                     <span class="modal-form-field-desc">Пошта</span>
                     <span class="modal-form-input-wrapper">
-                        <input type="mail" class="modal-form-input" required pattern="[a-zA-Zа-яА-ЯіІїЇ`ʼ]+" name="user_mail"
+                        <input type="mail" class="modal-form-input" required pattern="[a-zA-Zа-я1-90]+" name="user_mail"
                             placeholder="" />
                         <svg class="modal-form-input-icon">
                             <use href="./images/sprite.svg#icon-email-black"></use>
@@ -323,7 +335,7 @@
                     </svg>
                     Погоджуюсь з розсилкою та приймаю&nbsp;<a class="modal-form-underline" href="">Умови договору</a>
                 </label>
-                <button type="submit" class="modal-form-sumbit">Надіслати</button>
+                <button type="submit" class="modal-form-sumbit">Відправити</button>
         </div>
     </div>
     <script src="./js/modal.js"></script>
