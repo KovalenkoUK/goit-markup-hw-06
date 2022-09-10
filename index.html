@@ -272,15 +272,19 @@
             </div>
             <div class="social-follow">
                 <p class="social-footer">Підпишіться на розсилку</p>
-                <label>
-                    
-                     <input class="social-footer-mail" placeholder="E-mail" type="mailto" required pattern="[a-zA-Zа-яА-ЯіІїЇ`ʼ]+" name="usermail">
-                        <button class="footer-form-sumbit " type="submit">Підписатися
-                            <svg class="position-icon-sent">
-                                <use href="./images/sprite.svg#icon-send"></use>
-                            </svg>
-                        </button>
-                </label>
+                <div class="social-footer-write">
+                    <form action="">
+                        <label>
+                            <input class="social-footer-mail" placeholder="E-mail" type="mailto" required pattern="[a-zA-Zа-яА-ЯіІїЇ`ʼ]+" name="usermail">
+                        </label>
+                    </form>
+                            <button class="footer-form-sumbit " type="submit">Підписатися
+                                <svg class="position-icon-sent">
+                                    <use href="./images/sprite.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                </div>
+                
                     
                 
             </div>
@@ -325,7 +329,7 @@
                         </svg>
                     </span>
                 </label>
-                <label class="modal-form-field">
+                <label class="modal-form-textaria">
                     <span class="modal-form-field-desc">Коментар</span>
                     <textarea name="user_message" class="modal-form-message" placeholder="Введіть текст"></textarea>
                 </label>
@@ -334,7 +338,7 @@
                     <svg class="modal-form-own-checkbox">
                         <use class="modal-form-own-checkbox-icon" href="./images/sprite.svg#icon-check"></use>
                     </svg>
-                    Погоджуюсь з розсилкою та приймаю&nbsp;<a class="modal-form-underline" href="">Умови договору</a>
+                    <span class="modal-form-own-checkbox-text"> Погоджуюсь з розсилкою та приймаю</span>&nbsp;<a class="modal-form-underline" href="">Умови договору</a>
                 </label>
                 <button type="submit" class="modal-form-sumbit">Відправити</button>
         </div>
